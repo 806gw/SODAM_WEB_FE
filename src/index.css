@@ -1,0 +1,33 @@
+@font-face {
+  font-family: 'Pretendard';
+  src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+* {
+  box-sizing: border-box;
+  font-size: 1.125rem;
+  font-family: "Pretendard";
+  /* 기본 글씨크기 18px */
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  /* 이미지 드래고 방지 */
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+  user-drag: none;
+}
+
+a {
+  all: unset;
+  cursor: pointer;
+}
