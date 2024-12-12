@@ -5,7 +5,7 @@ import { useEffect, useState } from 'react';
 import { IoSearch } from 'react-icons/io5';
 import { FiShoppingCart, FiUser } from 'react-icons/fi';
 import { LuPenLine } from 'react-icons/lu';
-import logo from '@assets/header-logo.png';
+import Logo from '@assets/header-logo.png';
 
 const Header = () => {
     const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -21,7 +21,7 @@ const Header = () => {
             <S.InnerCont>
                 <S.HeaderLeft>
                     <Link to='/'>
-                        <img src={logo} alt='' />
+                        <img src={Logo} alt='' />
                     </Link>
                 </S.HeaderLeft>
                 <S.HeaderRight>
@@ -66,10 +66,10 @@ const Header = () => {
                     ) : (
                         <>
                             <Link to='/login'>
-                                <p>로그인</p>
+                                <p style={{ fontSize: 16 }}>로그인</p>
                             </Link>
                             <Link to='/register'>
-                                <p>회원가입</p>
+                                <p style={{ fontSize: 16 }}>회원가입</p>
                             </Link>
                         </>
                     )}

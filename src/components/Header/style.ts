@@ -1,7 +1,8 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const HeaderCont = styled.header`
-  height: 90px;
+  width: 100%;
+  height: 64px;
   border-bottom: solid 1px #d9d9d9;
   background-color: #fff;
   display: flex;
@@ -20,7 +21,7 @@ export const InnerCont = styled.div`
 
 export const HeaderLeft = styled.div`
   img {
-    height: 48px;
+    height: 32px;
     width: auto;
   }
 `;

@@ -9,6 +9,7 @@ function App() {
       <Routes>
         <Route path="/" element={<R.Landing />} />
       </Routes>
+      <R.Footer />
     </Router>
   )
 }
