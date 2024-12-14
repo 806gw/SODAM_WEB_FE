@@ -8,8 +8,10 @@ function App() {
       <R.Header />
       <Routes>
         <Route path="/" element={<R.Landing />} />
+        <Route path="/login" element={<R.SignIn />} />
+        <Route path="/signup/personal" element={<R.UserSignIn />} />
+        <Route path="/signup/business" element={<R.BusinessSignIn />} />
       </Routes>
-      <R.Footer />
     </Router>
   )
 }

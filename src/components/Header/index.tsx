@@ -66,10 +66,10 @@ const Header = () => {
                     ) : (
                         <>
                             <Link to='/login'>
-                                <p style={{ fontSize: 16 }}>로그인</p>
+                                <p>로그인</p>
                             </Link>
-                            <Link to='/register'>
-                                <p style={{ fontSize: 16 }}>회원가입</p>
+                            <Link to='/signup/personal'>
+                                <p>회원가입</p>
                             </Link>
                         </>
                     )}

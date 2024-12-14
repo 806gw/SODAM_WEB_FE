@@ -33,7 +33,14 @@ export const HeaderRight = styled.div`
   *:not(p) {
     display: flex;
     align-items: center;
-    font-size: 28px;
+    font-size: 24px;
+  }
+  p {
+    font-size: 16px;
+
+    &:hover {
+      color: #1fad1f;
+    }
   }
 `;
 

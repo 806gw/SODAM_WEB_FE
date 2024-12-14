@@ -1,4 +1,16 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
+
+const float = keyframes`
+  0% {
+    transform: translateY(-30px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(-30px);
+  }
+`;
 
 export const TopCont = styled.div`
   background-color: #fff;
@@ -58,6 +70,7 @@ export const IntroLeft = styled.div`
   .signInBtn {
     width: 160px;
     height: 54px;
+    font-size: 17px;
     border: 1px solid #d9d9d9;
     border-radius: 8px;
     background-color: #1fad1f;
@@ -76,6 +89,7 @@ export const IntroLeft = styled.div`
 export const IntroRight = styled.div`
   .introImg {
     width: 392.7px;
+    animation: ${float} 2.5s ease-in-out infinite;
   }
 `;
 
