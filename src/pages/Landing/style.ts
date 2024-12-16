@@ -2,13 +2,13 @@ import styled, { keyframes } from "styled-components";
 
 const float = keyframes`
   0% {
-    transform: translateY(-30px);
+    transform: translateY(-40px);
   }
   50% {
-    transform: translateY(-20px);
+    transform: translateY(-28px);
   }
   100% {
-    transform: translateY(-30px);
+    transform: translateY(-40px);
   }
 `;
 
@@ -71,6 +71,9 @@ export const IntroLeft = styled.div`
     width: 160px;
     height: 54px;
     font-size: 17px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border: 1px solid #d9d9d9;
     border-radius: 8px;
     background-color: #1fad1f;
@@ -89,6 +92,7 @@ export const IntroLeft = styled.div`
 export const IntroRight = styled.div`
   .introImg {
     width: 392.7px;
+    margin-top: 30px;
     animation: ${float} 2.5s ease-in-out infinite;
   }
 `;

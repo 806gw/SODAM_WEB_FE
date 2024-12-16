@@ -46,25 +46,6 @@ export const LoginBtn = styled.button`
   }
 `;
 
-export const InputCont = styled.div`
-  position: relative;
-`;
-
-export const PasswordToggleButton = styled.button`
-  position: absolute;
-  right: 10px;
-  top: 78%;
-  transform: translateY(-50%);
-  background: transparent;
-  border: none;
-  cursor: pointer;
-
-  .show_logo {
-    font-size: 20px;
-    color: #707070;
-  }
-`;
-
 export const LinkBox = styled.div`
   width: 80%;
   height: 50px;
@@ -88,20 +69,4 @@ export const LinkTag = styled(Link)`
 export const LoginText = styled.h1`
   text-align: center;
   padding: 20px 0 0;
-`;
-
-export const LoginFooter = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 30px;
-
-  p {
-    font-size: 14px;
-    padding: 10px;
-  }
-
-  .logo {
-    width: 60px;
-  }
 `;

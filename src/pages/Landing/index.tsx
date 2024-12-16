@@ -5,6 +5,7 @@ import Symbol from "@assets/header-logo.png"
 import Vegetable from "@assets/vegetable.png"
 import FeaturesImg from "@assets/features-sect.png"
 import ContactImg from "@assets/contact-sect.png"
+import { Link } from "react-router-dom"
 
 const Landing = () => {
     return (
@@ -15,7 +16,7 @@ const Landing = () => {
                         <S.IntroLeft>
                             <span className="introTitle">소담한 농산물을 집에서 편리하게</span>
                             <img src={Symbol} alt="symbol" className="introSymbol" />
-                            <button type="submit" className="signInBtn">로그인하기</button>
+                            <Link to={"/login"} className="signInBtn">로그인하기</Link>
                         </S.IntroLeft>
                         <S.IntroRight>
                             <img src={Vegetable} alt="vegetable" className="introImg" />
