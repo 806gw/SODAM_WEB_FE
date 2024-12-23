@@ -2,7 +2,7 @@ import * as S from "./style"
 
 import Logo from "@assets/header-logo.png"
 
-const FooterCopy = () => {
+const Copyright = () => {
     return (
         <S.TopCont>
             <img src={Logo} alt="logo" className="logo" />
@@ -10,4 +10,4 @@ const FooterCopy = () => {
         </S.TopCont>
     )
 }
-export default FooterCopy
+export default Copyright

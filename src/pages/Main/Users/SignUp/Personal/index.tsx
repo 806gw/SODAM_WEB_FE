@@ -45,7 +45,7 @@ export default function UserSignIn() {
                     <S.LinkTagRight to="/login">계정이 있으신가요?</S.LinkTagRight>
                 </S.LinkBox>
             </S.SignUpUserInputCont>
-            <R.FooterCopy />
+            <R.Copyright />
         </S.TopCont>
     );
 }

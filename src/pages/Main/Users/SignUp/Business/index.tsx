@@ -63,7 +63,7 @@ export default function BusinessSignIn() {
                     <S.LinkTagRight to="/login">계정이 있으신가요?</S.LinkTagRight>
                 </S.LinkBox>
             </S.SignUpBusinessInputCont>
-            <R.FooterCopy />
+            <R.Copyright />
         </S.TopCont>
     );
 }

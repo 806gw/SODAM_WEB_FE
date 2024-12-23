@@ -20,7 +20,7 @@ export default function SignIn() {
                     <S.LinkTag to="/signup/personal">계정이 없으신가요?</S.LinkTag>
                 </S.LinkBox>
             </S.LoginInputCont>
-            <R.FooterCopy />
+            <R.Copyright />
         </S.TopCont>
     );
 }

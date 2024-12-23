@@ -11,6 +11,8 @@ function App() {
         <Route path="/login" element={<R.SignIn />} />
         <Route path="/signup/personal" element={<R.UserSignIn />} />
         <Route path="/signup/business" element={<R.BusinessSignIn />} />
+        <Route path="/signup/business" element={<R.BusinessSignIn />} />
+        <Route path="/buyer/diary" element={<R.Diary />} />
       </Routes>
     </Router>
   )

@@ -3,17 +3,17 @@ import * as S from "./style"
 import { useState } from "react";
 
 interface InputFieldProps {
-    label: string;
+    label?: string;
     type: string;
-    placeholder: string;
-    change: string
+    placeholder?: string;
+    change: string;
 }
 
 const InputField: React.FC<InputFieldProps> = ({
     label,
     type,
     placeholder,
-    change
+    change,
 }) => {
 
     const [id, setId] = useState('')

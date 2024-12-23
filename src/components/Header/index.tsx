@@ -12,8 +12,8 @@ const Header = () => {
     const [userType, setUserType] = useState<'consumer' | 'buyer' | null>(null);
 
     useEffect(() => {
-        setIsLoggedIn(false);
-        setUserType('consumer');
+        setIsLoggedIn(true);
+        setUserType('buyer');
     }, []);
 
     return (
@@ -55,7 +55,7 @@ const Header = () => {
                                         <IoSearch />
                                     </Link>
                                 </S.SearchBar>
-                                <Link to='/diary'>
+                                <Link to='/buyer/diary'>
                                     <LuPenLine />
                                 </Link>
                                 <Link to='/mypage'>
