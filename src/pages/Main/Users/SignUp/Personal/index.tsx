@@ -1,4 +1,4 @@
-import * as R from "@src/allFiles"
+import * as C from "@src/allFiles"
 import * as S from "./style";
 
 export default function UserSignIn() {
@@ -7,32 +7,32 @@ export default function UserSignIn() {
             <S.SignUpUserInputCont>
                 <S.LoginText>회원가입</S.LoginText>
                 <S.LoginInputWrap>
-                    <R.InputField
+                    <C.InputField
                         label="아이디"
                         type="text"
                         placeholder="아이디"
                         change="id"
                     />
-                    <R.PasswordField />
-                    <R.InputField
+                    <C.PasswordField />
+                    <C.InputField
                         label="이메일"
                         type="email"
                         placeholder="이메일"
                         change="email"
                     />
-                    <R.InputField
+                    <C.InputField
                         label="이름"
                         type="text"
                         placeholder="이름"
                         change="name"
                     />
-                    <R.InputField
+                    <C.InputField
                         label="전화번호"
                         type="text"
                         placeholder="전화번호 (예시: 010-1234-5678)"
                         change="phone"
                     />
-                    <R.InputField
+                    <C.InputField
                         label="배송지"
                         type="text"
                         placeholder="배송지"
@@ -45,7 +45,7 @@ export default function UserSignIn() {
                     <S.LinkTagRight to="/login">계정이 있으신가요?</S.LinkTagRight>
                 </S.LinkBox>
             </S.SignUpUserInputCont>
-            <R.Copyright />
+            <C.Copyright />
         </S.TopCont>
     );
 }

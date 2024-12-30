@@ -1,4 +1,4 @@
-import * as R from "@src/allFiles"
+import * as C from "@src/allFiles"
 import * as S from "./style";
 
 import React from "react";
@@ -13,7 +13,7 @@ const PasswordField = () => {
 
     return (
         <S.InputCont>
-            <R.InputField
+            <C.InputField
                 label="비밀번호"
                 type={showPassword ? "text" : "password"}
                 placeholder="비밀번호"

@@ -30,9 +30,26 @@ export const DiaryWrap = styled.div`
     border: 1px solid #000;
     border-radius: 4px;
     resize: none;
-    padding: 10px;
+    padding: 10px 15px;
     font-size: 16px;
-    line-height: 1.5;
+    line-height: 2.5;
+    background-image: linear-gradient(
+      transparent,
+      transparent calc(2.5em - 1px),
+      #e5e5e5 0
+    );
+    background-size: 100% 2.5em;
+    background-origin: content-box;
+    background-attachment: local;
+    font-family: sans-serif;
+
+    &::placeholder {
+      color: #999;
+    }
+
+    &:focus {
+      outline: none;
+    }
   }
 `;
 

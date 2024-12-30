@@ -9,11 +9,11 @@ import Logo from '@assets/header-logo.png';
 
 const Header = () => {
     const [isLoggedIn, setIsLoggedIn] = useState(false);
-    const [userType, setUserType] = useState<'consumer' | 'buyer' | null>(null);
+    const [userType, setUserType] = useState<'personal' | 'business' | null>(null);
 
     useEffect(() => {
         setIsLoggedIn(true);
-        setUserType('buyer');
+        setUserType('business');
     }, []);
 
     return (
@@ -26,7 +26,7 @@ const Header = () => {
                 </S.HeaderLeft>
                 <S.HeaderRight>
                     {isLoggedIn ? (
-                        userType === 'consumer' ? (
+                        userType === 'personal' ? (
                             <>
                                 <S.SearchBar>
                                     <input
@@ -40,7 +40,7 @@ const Header = () => {
                                 <Link to='/cart'>
                                     <FiShoppingCart />
                                 </Link>
-                                <Link to='/mypage'>
+                                <Link to='/personal/mypage'>
                                     <FiUser />
                                 </Link>
                             </>
@@ -55,10 +55,10 @@ const Header = () => {
                                         <IoSearch />
                                     </Link>
                                 </S.SearchBar>
-                                <Link to='/buyer/diary'>
+                                <Link to='/business/diary'>
                                     <LuPenLine />
                                 </Link>
-                                <Link to='/mypage'>
+                                <Link to='/business/mypage'>
                                     <FiUser />
                                 </Link>
                             </>

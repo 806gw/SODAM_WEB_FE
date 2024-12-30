@@ -1,4 +1,4 @@
-import * as R from "@src/allFiles"
+import * as C from "@src/allFiles"
 import * as S from "./style"
 
 import Symbol from "@assets/header-logo.png"
@@ -46,7 +46,7 @@ const Landing = () => {
                     </S.InnerContact>
                 </S.ContactSect>
             </S.TopCont>
-            <R.Footer />
+            <C.Footer />
         </>
     )
 }

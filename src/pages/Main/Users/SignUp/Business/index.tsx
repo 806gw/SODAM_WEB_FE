@@ -1,4 +1,4 @@
-import * as R from "@src/allFiles"
+import * as C from "@src/allFiles"
 import * as S from "./style";
 
 export default function BusinessSignIn() {
@@ -7,50 +7,50 @@ export default function BusinessSignIn() {
             <S.SignUpBusinessInputCont>
                 <S.LoginText>회원가입</S.LoginText>
                 <S.LoginInputWrap>
-                    <R.InputField
+                    <C.InputField
                         label="아이디"
                         type="text"
                         placeholder="아이디"
                         change="id"
                     />
-                    <R.PasswordField />
-                    <R.InputField
+                    <C.PasswordField />
+                    <C.InputField
                         label="이메일"
                         type="email"
                         placeholder="이메일"
                         change="email"
                     />
-                    <R.InputField
+                    <C.InputField
                         label="사업자등록번호"
                         type="text"
                         placeholder="사업자등록번호"
                         change="businessNumber"
                     />
-                    <R.InputField
+                    <C.InputField
                         label="통신판매업신고번호"
                         type="text"
                         placeholder="통신판매업신고번호"
                         change="mailOrderNumber"
                     />
-                    <R.InputField
+                    <C.InputField
                         label="사업자명"
                         type="text"
                         placeholder="사업자명"
                         change="businessName"
                     />
-                    <R.InputField
+                    <C.InputField
                         label="농장 주소"
                         type="text"
                         placeholder="농장 주소"
                         change="farmAddress"
                     />
-                    <R.InputField
+                    <C.InputField
                         label="농장명"
                         type="text"
                         placeholder="농장명"
                         change="farmName"
                     />
-                    <R.InputField
+                    <C.InputField
                         label="정산계좌"
                         type="text"
                         placeholder="정산계좌"
@@ -63,7 +63,7 @@ export default function BusinessSignIn() {
                     <S.LinkTagRight to="/login">계정이 있으신가요?</S.LinkTagRight>
                 </S.LinkBox>
             </S.SignUpBusinessInputCont>
-            <R.Copyright />
+            <C.Copyright />
         </S.TopCont>
     );
 }

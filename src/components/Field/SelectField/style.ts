@@ -18,7 +18,7 @@ export const MainCont = styled.div`
 `;
 
 export const SpanCont = styled.div`
-  width: 32.47%;
+  width: 34.47%;
   height: 100%;
   display: flex;
   align-items: center;
@@ -35,14 +35,13 @@ export const InputCont = styled.div<InputType>`
   height: 100%;
   display: flex;
   align-items: center;
-  justify-content: center;
+  margin-left: 20px;
 
-  & > input {
-    width: 80%;
-    height: 36px;
+  & > select {
+    width: 50%;
+    height: 39px;
     padding: 10px;
     border: 1px solid #d9d9d9;
-    color: ${(props) => (props.$inputType === "date" ? "#949494" : "#000")};
     border-radius: 3px;
     font-size: 16px;
   }
