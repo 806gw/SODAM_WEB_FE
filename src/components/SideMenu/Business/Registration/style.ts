@@ -5,9 +5,7 @@ export const RegistrationContainer = styled.div`
   padding: 20px;
 `;
 
-export const TitleRegistration = styled.h1`
-  margin-top: 40px;
-`;
+export const TitleRegistration = styled.h1``;
 
 export const MainCont = styled.div`
   margin-top: 40px;
